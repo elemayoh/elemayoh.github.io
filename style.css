@@ -1,0 +1,115 @@
+body
+{
+    /* sets background as a pastel blue color*/
+    background: rgb(164, 213, 246);
+    font-size: 8pt;
+}
+
+/* centers tag on the page */
+div.center
+{
+    text-align: center;
+    display: block;
+}
+
+.tinyFont
+{
+    font-size: 6pt;
+    font-family: cursive;
+    font-style: italic;
+}
+
+.column
+{
+    column-count: 3;
+    column-span: 1;
+    column-gap: 5;
+    /*display: block;*/
+    width: 25%;
+}
+
+a
+{
+    color: gray;
+}
+
+/* image doesnt center idk why; should work from .center */
+/*img
+{
+    text-align: center;
+}*/
+
+/* slightly fades img tags when hovered over*/
+img.fade:hover
+{
+    opacity: 0.7;
+}
+
+/* Desktop scaling */
+@media only screen and (max-width: 1200px)
+{
+    /* scale images to a small thumbnail*/
+    .imgSmall
+    {
+        min-width: 2rem;
+        max-width: 5rem;
+    }
+
+    /* scale images to a medium thumbnail */
+    .imgMedium
+    {
+        min-width: 5rem;
+        max-width: 10rem;
+    }
+
+    /* scale images to a large thumbnail */
+    .imgLarge
+    {
+        min-width: 10rem;
+        max-width: 15rem;
+    }
+}
+
+/* Tablet scaling */
+@media only screen and (max-width: 736px)
+{
+    /* scale images to a small thumbnail*/
+    .imgSmall
+    {
+        
+    }
+
+    /* scale images to a medium thumbnail */
+    .imgMedium
+    {
+        
+    }
+
+    /* scale images to a large thumbnail */
+    .imgLarge
+    {
+        
+    }
+}
+
+/* Mobile phone scaling */
+@media only screen and (max-device-width: 320px) /* and (max-device-width: 820px) */
+{
+    /* scale images to a small thumbnail*/
+    .imgSmall
+    {
+        
+    }
+
+    /* scale images to a medium thumbnail */
+    .imgMedium
+    {
+        
+    }
+
+    /* scale images to a large thumbnail */
+    .imgLarge
+    {
+        
+    }
+}
