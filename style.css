@@ -5,27 +5,58 @@ body
     font-size: 8pt;
 }
 
-/* centers tag on the page */
-div.center
+#start
 {
     text-align: center;
-    display: block;
+    display: flex;
+    /*flex-flow: center;*/
+    justify-content: center;
 }
 
-.tinyFont
+/* centers tag on the page */
+.center
 {
+    text-align: center;
+}
+
+#madeBy
+{
+    text-align: center;
     font-size: 6pt;
     font-family: cursive;
     font-style: italic;
 }
 
-.column
+.column2
+{
+    column-count: 2;
+    column-gap: 20px;
+}
+
+.column3
 {
     column-count: 3;
+    column-gap: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+div.center a
+{
+    display: block;
+    /*width: 100%;*/
     column-span: 1;
-    column-gap: 5;
-    /*display: block;*/
-    width: 25%;
+}
+
+div.center #left_align
+{
+    justify-self: start;
+}
+
+div.center #right_align
+{
+    justify-self: end;
 }
 
 a
@@ -34,10 +65,12 @@ a
 }
 
 /* image doesnt center idk why; should work from .center */
-/*img
+img
 {
+    max-width: 60%;
+    height: auto;
     text-align: center;
-}*/
+}
 
 /* slightly fades img tags when hovered over*/
 img.fade:hover
@@ -45,24 +78,48 @@ img.fade:hover
     opacity: 0.7;
 }
 
-/* Desktop scaling */
+/*Image scaling*/
+
+.imgSmall
+{
+    min-width: 2rem;
+    max-width: 4rem;
+}
+
+/* scale images to a medium thumbnail */
+.imgMedium
+{
+    min-width: 5rem;
+    max-width: 10rem;
+}
+
+/* scale images to a large thumbnail */
+.imgLarge
+{
+    min-width: 10rem;
+    max-width: 15rem;
+}
+
+
+/*
+/* Desktop scaling |
 @media only screen and (max-width: 1200px)
 {
-    /* scale images to a small thumbnail*/
+    /* scale images to a small thumbnail|
     .imgSmall
     {
         min-width: 2rem;
         max-width: 5rem;
     }
 
-    /* scale images to a medium thumbnail */
+    /* scale images to a medium thumbnail |
     .imgMedium
     {
         min-width: 5rem;
         max-width: 10rem;
     }
 
-    /* scale images to a large thumbnail */
+    /* scale images to a large thumbnail |
     .imgLarge
     {
         min-width: 10rem;
@@ -70,46 +127,47 @@ img.fade:hover
     }
 }
 
-/* Tablet scaling */
+/* Tablet scaling |
 @media only screen and (max-width: 736px)
 {
-    /* scale images to a small thumbnail*/
+    /* scale images to a small thumbnail|
     .imgSmall
     {
         
     }
 
-    /* scale images to a medium thumbnail */
+    /* scale images to a medium thumbnail |
     .imgMedium
     {
         
     }
 
-    /* scale images to a large thumbnail */
+    /* scale images to a large thumbnail |
     .imgLarge
     {
         
     }
 }
 
-/* Mobile phone scaling */
-@media only screen and (max-device-width: 320px) /* and (max-device-width: 820px) */
+/* Mobile phone scaling |
+@media only screen and (max-device-width: 320px) /* and (max-device-width: 820px) |
 {
-    /* scale images to a small thumbnail*/
+    /* scale images to a small thumbnail|
     .imgSmall
     {
         
     }
 
-    /* scale images to a medium thumbnail */
+    /* scale images to a medium thumbnail |
     .imgMedium
     {
         
     }
 
-    /* scale images to a large thumbnail */
+    /* scale images to a large thumbnail |
     .imgLarge
     {
         
     }
 }
+*/
