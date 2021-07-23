@@ -57,6 +57,28 @@ div.centerAbsolute a
     text-align: center;
 }
 
+.polaroid
+{
+    display: inline-block;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*padding-top: 25px;
+    padding-bottom: 10px;*/
+    padding: 25px 10px; 
+    font-size: 14pt;
+}
+
+div.polaroid span
+{
+    font-size: 24pt;
+    font-style: italic;
+}
+
+.polaroid img
+{
+    border-radius: 2%;
+}
+
 #info
 {
     font-size: 16pt;
@@ -89,6 +111,14 @@ a img:hover
 {
     max-width: 3%;
     max-height: 3%;
+}
+
+#to
+{
+    position: static;
+    top: 8px;
+    left: 16px;
+    font-size: 12pt;
 }
 
 /*Image scaling*/
