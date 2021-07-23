@@ -45,14 +45,16 @@ body
     column-count: 3;
     display: flex;
     flex-flow: row nowrap;
+    width: 80%;
     justify-content: center;
     align-items: center;
 }
 
-div.center a
+div.centerAbsolute a
 {
     display: block;
     column-span: 1;
+    text-align: center;
 }
 
 #info
