@@ -1,6 +1,5 @@
 body
 {
-    /* sets background as a pastel blue color*/
     background: rgb(230, 185, 160);
     font-size: 8pt;
 }
@@ -17,6 +16,15 @@ body
 .center
 {
     text-align: center;
+}
+
+.centerAbsolute
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 #madeBy
