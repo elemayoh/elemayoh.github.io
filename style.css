@@ -1,14 +1,19 @@
+html
+{
+    background: rgb(230, 185, 160) url('images/sunset.JPG') no-repeat center fixed;
+    background-size: cover;
+}
+
 body
 {
-    background: rgb(230, 185, 160);
     font-size: 8pt;
+    text-align: center;
 }
 
 #start
 {
     text-align: center;
     display: flex;
-    /*flex-flow: center;*/
     justify-content: center;
 }
 
@@ -22,7 +27,6 @@ body
     position: absolute;
     top: 50%;
     left: 50%;
-    /*-ms-transform: translate(-50%, -50%);*/
     transform: translate(-50%, -50%);
 }
 
@@ -37,6 +41,10 @@ body
 .column2
 {
     column-count: 2;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
     column-gap: 20px;
 }
 
@@ -75,7 +83,19 @@ div.polaroid span
 
 .polaroid img
 {
-    border-radius: 2%;
+    border-radius: 4%;
+}
+
+.leftCol
+{
+    text-align: right;
+    column-span: 1;
+}
+
+.rightCol
+{
+    text-align: left;
+    column-span: 1;
 }
 
 #info
@@ -83,7 +103,7 @@ div.polaroid span
     font-size: 16pt;
 }
 
-#lower
+#lipsoul
 {
     padding-top: 2%;
 }
@@ -91,6 +111,7 @@ div.polaroid span
 a
 {
     color: gray;
+    text-decoration: none;
 }
 
 img
@@ -104,6 +125,12 @@ img
 a img:hover
 {
     opacity: 0.7;
+}
+
+h1
+{
+    font-size: 18pt;
+    border: solid 3pt white;
 }
 
 .home
