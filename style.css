@@ -155,7 +155,7 @@ li
 
 .leftCol, .rightCol
 {
-    width: 20%;
+    width: 40%;
     /*float: left;*/
     font-size: 24pt;
     font-weight: 900;
@@ -258,7 +258,7 @@ div.polaroid span
     text-align: center;
     display: inline-block;
     justify-content: center;
-    width: 30%;
+    width: 50%;
     background-color: pink;
     font-size: 24pt;
     border: solid 1pt black;
