@@ -157,7 +157,7 @@ li
 {
     width: 40%;
     /*float: left;*/
-    font-size: 24pt;
+    font-size: 32pt;
     font-weight: 900;
     /*border: solid 1pt black;*/
     text-align: center;
@@ -188,7 +188,7 @@ li
 
 .leftCol div, .rightCol div
 {
-    font-size: 14pt;
+    font-size: 24pt;
     font-weight: normal;
     text-align: left;
     padding: 8px;
@@ -206,7 +206,7 @@ div.centerAbsolute a
 
 div.polaroid span
 {
-    font-size: 24pt;
+    font-size: 32pt;
     font-style: italic;
 }
 
@@ -227,7 +227,7 @@ div.polaroid span
 
 #info
 {
-    font-size: 16pt;
+    font-size: 28pt;
 }
 
 #lipsoul
